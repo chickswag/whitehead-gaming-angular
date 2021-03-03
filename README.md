@@ -1,2 +1,0 @@
-# FormThemeWP
-The citizen assessment
