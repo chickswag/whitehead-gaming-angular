@@ -3,7 +3,6 @@
 get_header();
 
 ?>
-
 	<div id="primary" class="content-area grid-container fluid">
 		<main id="main" class="site-main">
 
