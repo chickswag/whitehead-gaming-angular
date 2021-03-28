@@ -1,0 +1,29 @@
+<section class="" id="poker-games">
+  <div class="container-fluid">
+    <h6>Poker games</h6>
+
+    <!-- Icon Divider-->
+    <div class="d-flex justify-content-start flex-wrap">
+      <div *ngFor="let game of games">
+        <div *ngIf="game['categories'].includes('poker');" class="game-img m-3">
+          <span *ngFor="let category of game['categories']">
+            <div [ngSwitch]="category">
+              <div *ngSwitchCase="'top'">
+                <span class="top-games"></span>
+              </div>
+              <div *ngSwitchCase="'new'">
+                <span class="new-games"></span>
+              </div>
+            </div>
+          </span>
+          <img class="image" src="{{'https:'+game['image']}}" title="{{game['name']}}" alt="{{game['id']}}"/>
+          <div *ngIf="game['amount']" class="amount p-2 text-white font-weight-bold">&#163;{{game['amount']}}</div>
+          <div class="middle">
+            <i class="fa fa-play-circle fa-4x " style="color: #fff"></i>
+            <div class="text">{{game['name']}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
