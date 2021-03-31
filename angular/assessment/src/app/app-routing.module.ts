@@ -31,7 +31,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes),RouterModule],
   exports: [RouterModule],
   providers: [DataService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 export class AppRoutingModule  {}

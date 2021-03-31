@@ -4,7 +4,6 @@ import {DataService} from "./data.service";
 
 
 @Component ({
-  selector: 'my-app',
   templateUrl: 'app/jackpot.component.html',
 })
 

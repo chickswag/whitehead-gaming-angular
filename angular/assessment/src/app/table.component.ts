@@ -3,7 +3,6 @@ import {HttpClient} from "@angular/common/http";
 import {DataService} from "./data.service";
 
 @Component ({
-  selector: 'my-app',
   templateUrl: 'app/table.component.html',
 })
 export class TableComponent implements OnInit {

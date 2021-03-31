@@ -5,7 +5,6 @@ import {DataService} from "./data.service";
 
 
 @Component ({
-  selector: 'my-app',
   templateUrl: 'app/poker.component.html',
 })
 

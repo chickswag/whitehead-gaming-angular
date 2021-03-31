@@ -1,18 +1,8 @@
-import {Component, OnInit} from '@angular/core';
 import {DataService} from "./data.service";
 
-
-@Component ({
-  templateUrl: 'app/blackjack.component.html',
-})
-
-export class BlackjackComponent implements OnInit {
-  games : any;
-  constructor(private dataService: DataService) { }
-  ngOnInit() {
-    this.getGamesData()
-  }
-  getGamesData(){
+export class Games {
+  private games : any;
+  constructor(private dataService: DataService) {
     this.dataService.getGames().subscribe(responseList => {
       let all_games = responseList[1];
       let jackpot_games = responseList[0];
@@ -24,7 +14,7 @@ export class BlackjackComponent implements OnInit {
         });
       })
       this.games = all_games;
-    });
+    })
   }
 
 }

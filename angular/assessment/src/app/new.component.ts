@@ -3,7 +3,6 @@ import {DataService} from "./data.service";
 
 
 @Component ({
-  selector: 'my-app',
   templateUrl: 'app/new.component.html',
 })
 
